@@ -2,7 +2,7 @@
 dotnotation - syntactic sugar for "dumb objects" (no inheritance), made from a lexical closure
 
 ### SYNOPSIS
-'''perl
+```perl
 
     my $Point = sub { my $args = shift // {};
         my ($x, $y) = @$args{qw|x y|};
@@ -29,4 +29,4 @@ dotnotation - syntactic sugar for "dumb objects" (no inheritance), made from a l
 
     $p.x = 1;
     say $p.distance();
-'''
+```
